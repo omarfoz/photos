@@ -6,8 +6,8 @@
   "sort-media-by": "filename",
   "download-photos": "copy",
   "cleanup": true,
-  "theme": "cards",
+  "theme": "mosaic",
   "css": "./custom.css",
-  "footer": "Copyright Text",
+  "footer": "Omar Alfawza @oyf_96",
   "usage-stats": false
 }

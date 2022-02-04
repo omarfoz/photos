@@ -6,7 +6,7 @@
   "sort-media-by": "filename",
   "download-photos": "copy",
   "cleanup": true,
-  "theme": "mosaic",
+  "theme": "flow",
   "css": "./custom.css",
   "footer": "Omar Alfawzan @oyf_96",
   "usage-stats": false

@@ -6,170 +6,59 @@
       <meta name="viewport" content="width=device-width, user-scalable=no" />
       <title>Photo Gallery - Home</title>
       <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
-      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/lightslider/css/lightslider.min.css" />
       <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
       <link rel="stylesheet" href="public/core.css" />
       <link rel="stylesheet" href="public/theme.css" />
+      <link rel="stylesheet" href="public/justifiedgallery/justifiedGallery.min.css" />
   </head>
 
   <body>
-
-    <div>
+    
+    <div id="container">
     
       <!--
         Gallery title
       -->
-      <header style="color: #17baef;">
+      <header>
         <h1><a href="index.html">Photo Gallery</a></h1>
       </header>
     
       <!--
         Breadcrumbs of parent albums
       -->
-    
       <nav class="breadcrumbs">
-        <div class="mask"></div>
     <a class="breadcrumb-item" href="index.html">Home</a>
       </nav>
     
+    
       <!--
-        Main gallery panel
+        Nested albums, if any
       -->
-      <section id="content">
+      <div id="albums" class="justified-gallery">
+            <a href="VSCO.html">
+              <img src="media/small/VSCO/IMG_4583.jpg" alt="">
+              <div class="caption" style="display: inline-block">
+                <h3>VSCO</h3>
+                <div class="summary">8 photos</div>
+              </div>
+            </a>
+      </div>
     
-        <!--
-          Nested albums, if any
-        -->
-        <ul id="albums">
-        </ul>
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix justified-gallery">
+      </ul>
     
-        <!--
-          All photos and videos
-        -->
-        <ul id="media">
-            
-              <li data-src="media/large/IMG_4583.jpg"
-                  data-sub-html="Processed with VSCO with kp9 preset"
-                  data-download-url="media/original/IMG_4583.jpg"
-                  
-                  data-filename="IMG_4583.jpg"
-            
-                >
-                <a href="media/original/IMG_4583.jpg">
-                  <img src="media/thumbs/IMG_4583.jpg"
-                       width="120"
-                       height="120"
-                       alt="IMG_4583.jpg" />
-                </a>
-              </li>        
-              <li data-src="media/large/IMG_4649.jpg"
-                  data-sub-html="Processed with VSCO with h5 preset"
-                  data-download-url="media/original/IMG_4649.jpg"
-                  
-                  data-filename="IMG_4649.jpg"
-            
-                >
-                <a href="media/original/IMG_4649.jpg">
-                  <img src="media/thumbs/IMG_4649.jpg"
-                       width="120"
-                       height="120"
-                       alt="IMG_4649.jpg" />
-                </a>
-              </li>        
-              <li data-src="media/large/IMG_4668.jpg"
-                  data-sub-html="Processed with VSCO with a6 preset"
-                  data-download-url="media/original/IMG_4668.jpg"
-                  
-                  data-filename="IMG_4668.jpg"
-            
-                >
-                <a href="media/original/IMG_4668.jpg">
-                  <img src="media/thumbs/IMG_4668.jpg"
-                       width="120"
-                       height="120"
-                       alt="IMG_4668.jpg" />
-                </a>
-              </li>        
-              <li data-src="media/large/IMG_4669.jpg"
-                  data-sub-html="Processed with VSCO with ss1 preset"
-                  data-download-url="media/original/IMG_4669.jpg"
-                  
-                  data-filename="IMG_4669.jpg"
-            
-                >
-                <a href="media/original/IMG_4669.jpg">
-                  <img src="media/thumbs/IMG_4669.jpg"
-                       width="120"
-                       height="120"
-                       alt="IMG_4669.jpg" />
-                </a>
-              </li>        
-              <li data-src="media/large/IMG_4670.jpg"
-                  data-sub-html="Processed with VSCO with nc preset"
-                  data-download-url="media/original/IMG_4670.jpg"
-                  
-                  data-filename="IMG_4670.jpg"
-            
-                >
-                <a href="media/original/IMG_4670.jpg">
-                  <img src="media/thumbs/IMG_4670.jpg"
-                       width="120"
-                       height="120"
-                       alt="IMG_4670.jpg" />
-                </a>
-              </li>        
-              <li data-src="media/large/IMG_4671.jpg"
-                  data-sub-html="Processed with VSCO with a6 preset"
-                  data-download-url="media/original/IMG_4671.jpg"
-                  
-                  data-filename="IMG_4671.jpg"
-            
-                >
-                <a href="media/original/IMG_4671.jpg">
-                  <img src="media/thumbs/IMG_4671.jpg"
-                       width="120"
-                       height="120"
-                       alt="IMG_4671.jpg" />
-                </a>
-              </li>        
-              <li data-src="media/large/IMG_4705.jpg"
-                  data-sub-html="Processed with VSCO with nc preset"
-                  data-download-url="media/original/IMG_4705.jpg"
-                  
-                  data-filename="IMG_4705.jpg"
-            
-                >
-                <a href="media/original/IMG_4705.jpg">
-                  <img src="media/thumbs/IMG_4705.jpg"
-                       width="120"
-                       height="120"
-                       alt="IMG_4705.jpg" />
-                </a>
-              </li>        
-              <li data-src="media/large/IMG_4720.jpg"
-                  data-sub-html="Processed with VSCO with a6 preset"
-                  data-download-url="media/original/IMG_4720.jpg"
-                  
-                  data-filename="IMG_4720.jpg"
-            
-                >
-                <a href="media/original/IMG_4720.jpg">
-                  <img src="media/thumbs/IMG_4720.jpg"
-                       width="120"
-                       height="120"
-                       alt="IMG_4720.jpg" />
-                </a>
-              </li>    </ul>
+      <!--
+        Pagination
+      -->
     
-        <!--
-          Pagination
-        -->
-    
-        <!--
-          Zip file link
-        -->
-    
-      </section>
+      <!--
+        Zip file link
+      -->
     
       <!--
         Optional footer
@@ -189,11 +78,13 @@
     <script src="public/videojs/video.min.js"></script>
     <!-- LightGallery -->
     <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightslider/js/lightslider.min.js"></script>
     <script src="public/lightgallery/js/lg-autoplay.js"></script>
     <script src="public/lightgallery/js/lg-pager.js"></script>
     <script src="public/lightgallery/js/lg-thumbnail.js"></script>
     <script src="public/lightgallery/js/lg-video.js"></script>
     <script src="public/lightgallery/js/lg-exif.min.js"></script>
+    <script src="public/justifiedgallery/jquery.justifiedGallery.min.js"></script>
 
     <script>
       $(document).ready(function() {
@@ -203,10 +94,52 @@
           loop : false,
           download: true,
           counter: true,
-          videojs: true
+          videojs: true,
+          exThumbImage: 'data-exthumbimage',
+        });
+
+        // Init justified gallery for albums
+        $("#albums").justifiedGallery({
+          margins: 10,
+          rowHeight: 300,
+          maxRowHeight: 325,
+        });
+
+        // Init justified gallery for photos
+        $("#media").justifiedGallery({
+          selector: '.albumList',
+          waitThumbnailsLoad: false,
+          margins: 10,
+          rowHeight: 250,
+          maxRowHeight: 275,
         });
       });
     </script>
+
+      <script id="slider-js" data-interval="">
+        $(document).ready(function () {
+          let waitTime = 1000;
+
+          try {
+            waitTime = parseInt($("#slider-js").data("interval"));
+          } catch (e) {
+            console.error("Invalid speed value for slider: " + waitTime + "\n" + e);
+          }
+
+          $("#lightSlider").lightSlider({
+            auto: true,
+            loop: true,
+            item: 1,
+            gallery: true,
+            pause: waitTime,
+            onSliderLoad: (el) => {
+              el.lightGallery({
+                selector: "#lightSlider li"
+              })
+            }
+          });
+        });
+      </script>
 
 
   </body>
